@@ -4,7 +4,9 @@ export default createStore({
   state: {
     characters: [],
   },
-  getters: {},
+  getters: {
+    
+  },
   mutations: {
     saveCharacters(state, chars) {
       state.characters = chars;
@@ -18,5 +20,7 @@ export default createStore({
       context.commit("saveCharacters", data.results);
     },
   },
-  modules: {},
+  modules: {
+
+  },
 });
