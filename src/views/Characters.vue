@@ -16,7 +16,13 @@ export default {
   computed:{
       characters(){
           return this.$store.state.characters
-      }
+      },
+      currentPage(){
+          return this.$store.state.characters
+      },
+      maxPages(){
+          return this.$store.state.characters
+      },
   },
   methods: {
     async getCharacters() {
